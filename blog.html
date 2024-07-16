@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Blog</title>
+    <link rel="stylesheet" type="text/css" href="blog.css">
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div id="logo">
+                <a href="index.html"><img src="LOGO.png" alt="Logo"></a>
+                <span>CyberSecure</span>
+            </div>
+            <nav id="navigation">
+                <a href="index.html">Home</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main id="content">
+            <aside id="sidebar">
+                <a href="services.html">Services Overview</a>
+                <a href="testimonials.html">Client Testimonials</a>
+                <a href="news.html">Latest News</a>
+                <a href="training.html">Training Programs</a>
+                <a href="resources.html">Resources</a>
+            </aside>
+            <section id="maincontent">
+                <div id="blog-form">
+                    <h2>Create a Blog Post</h2>
+                    <input type="text" id="blog-title" placeholder="Enter title...">
+                    <textarea id="blog-content" rows="10" placeholder="Enter your blog content..."></textarea>
+                    <button onclick="createBlogPost()">Post</button>
+                </div>
+                
+                <div class="blog-post">
+                    <p class="date-posted">07/13/2024</p>
+                    <h2>Understanding Cyber Threats: A Comprehensive Guide</h2>
+                    <p>In today's digital era, cybersecurity threats pose significant risks to individuals and organizations alike. This blog provides a comprehensive overview of various cyber threats, ranging from malware like viruses and ransomware to sophisticated phishing attacks and Distributed Denial of Service (DDoS) incidents. By exploring the impact of these threats, including financial losses, reputational damage, and legal repercussions, readers gain insight into the critical importance of robust cybersecurity measures. The blog emphasizes proactive practices such as regular software updates, strong password management, and cybersecurity training for employees. By implementing these strategies, individuals and businesses can mitigate risks and protect sensitive information effectively.</p>
+                </div>
+
+                
+            </section>
+        </main>
+        <footer id="footer">
+            <img src="LOGO.png" alt="Logo">
+            <p>Designed by Gian Francis R. Lagman</p>
+            <p>Email: 202312745@fit.edu.ph</p>
+        </footer>
+    </div>
+
+    <script src="blog.js"></script>
+</body>
+</html>

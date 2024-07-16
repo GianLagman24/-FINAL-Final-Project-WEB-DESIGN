@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head> 
+    <meta charset="UTF-8"> 
+    <title>Client Testimonials</title> 
+    <link rel="stylesheet" type="text/css" href="testimonials.css"> 
+</head>
+<body>
+    <div id="wrapper">
+        <header id="header">
+            <div id="logo">
+                <a href="index.html"><img src="LOGO.png" alt="Logo"></a>
+                <span>CyberSecure</span>
+            </div>
+            <nav id="navigation">
+                <a href="index.html">Home</a>
+                <a href="faqs.html">FAQs</a>
+                <a href="about.html">About</a>
+                <a href="blog.html">Blog</a>
+                <a href="contact.html">Contact</a>
+            </nav>
+        </header>
+        <main id="content">
+            <aside id="sidebar">
+                <a href="services.html">Services Overview</a>
+                <a href="testimonials.html">Client Testimonials</a>
+                <a href="news.html">Latest News</a>
+                <a href="training.html">Training Programs</a>
+                <a href="resources.html">Resources</a>
+            </aside>
+            <section id="maincontent">
+                <div id="blog-form">
+                    <h2>Create a Client Testimonial</h2>
+                    <input type="text" id="blog-title" placeholder="Enter Company Name...">
+                    <textarea id="blog-content" rows="10" placeholder="Enter your Experience with CyberSecure..."></textarea>
+                    <div id="rating">
+                        <span>Rate us:</span>
+                        <div class="stars">
+                            <input type="radio" id="star5" name="rating" value="5"><label for="star5" title="5 stars">&#9733;</label>
+                            <input type="radio" id="star4" name="rating" value="4"><label for="star4" title="4 stars">&#9733;</label>
+                            <input type="radio" id="star3" name="rating" value="3"><label for="star3" title="3 stars">&#9733;</label>
+                            <input type="radio" id="star2" name="rating" value="2"><label for="star2" title="2 stars">&#9733;</label>
+                            <input type="radio" id="star1" name="rating" value="1"><label for="star1" title="1 star">&#9733;</label>
+                        </div>
+                    </div>
+                    <button onclick="createBlogPost()">Post</button>
+                </div>
+                
+                <div class="blog-post">
+                    <p class="date-posted">07/13/2024</p>
+                    <h2>HRO COMPANY</h2>
+                    <p>By the end of the lesson i understood how to secure cloud infrastructure and ensure compliance with relevant regulations.</p>
+                    <p>Rating: ★★★★★</p>
+                </div>
+                
+                
+            </section>
+        </main>
+        <footer id="footer">
+            <img src="LOGO.png" alt="Logo">
+            <p>Designed by Gian Francis R. Lagman</p>
+            <p>Email: 202312745@fit.edu.ph</p>
+        </footer>
+    </div>
+
+    <script src="testimonials.js"></script>
+</body>
+</html>

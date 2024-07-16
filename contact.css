@@ -1,0 +1,192 @@
+/* Gian Francis R. Lagman TX05 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('BGweb.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0e0e0;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.9);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+#logo span {
+    font-size: 20px;
+    color: #e0e0e0;
+    margin-left: 10px;
+}
+
+#navigation a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 5px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navigation a:hover {
+    background-color: #9e4caf;
+    color: #fff;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 80px;
+}
+
+
+#sidebar {
+    width: 25%;
+    background-color: rgba(44, 44, 44, 0.9);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 20px;
+    position: sticky;
+    top: 80px;
+    max-height: 470px;
+    overflow-y: auto;
+}
+
+#sidebar a {
+    display: block;
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 25px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 20px;
+}
+
+#sidebar a:hover {
+    background-color: #9e4caf;
+    color: #1c1c1c;
+}
+
+#maincontent {
+    width: 80%;
+    background-color: rgba(44, 44, 44, 0.9);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+}
+
+#welcome-section {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#welcome-section h1 {
+    font-size: 36px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+#welcome-section p {
+    font-size: 18px;
+    color: #c0c0c0;
+}
+
+#form-section {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form label {
+    font-size: 18px;
+    color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #777;
+    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #9e4caf;
+}
+
+form button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    background-color: #9e4caf;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+form button:hover {
+    background-color: #7e3a9f;
+}
+
+#footer {
+    width: 100000px;
+    background-color: rgba(44, 44, 44, 0.9);
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#footer img {
+    height: 30px;
+    vertical-align: middle;
+}
+
+#footer p {
+    margin: 5px 0;
+}

@@ -1,0 +1,154 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('BGweb.gif');
+    background-size: cover;
+    color: #e0e0e0;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.9);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+#logo span {
+    font-size: 20px;
+    color: #e0e0e0;
+    margin-left: 10px;
+}
+
+#navigation a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+#navigation a:hover {
+    color: #9e4caf;
+}
+
+#content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 80px; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+form {
+    width: 90%;
+    max-width: 500px;
+    background-color: rgba(44, 44, 44, 0.9);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+h1 {
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+.inputBox {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.inputBox input {
+    width: 100%;
+    padding: 10px;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #9e4caf;
+    outline: none;
+    color: #e0e0e0;
+    font-size: 16px;
+}
+
+.inputBox label {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    color: #9e4caf;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputBox input:focus + label, 
+.inputBox input:valid + label {
+    top: -20px;
+    left: 0;
+    color: #9e4caf;
+    font-size: 12px;
+}
+
+.inputBox input[type="submit"] {
+    background-color: #9e4caf;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.inputBox input[type="submit"]:hover {
+    background-color: #7e3a9f;
+}
+
+p {
+    color: #e0e0e0;
+}
+
+p a {
+    color: #9e4caf;
+    text-decoration: none;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
+
+#footer {
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.9);
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#footer img {
+    height: 30px;
+    vertical-align: middle;
+}
+
+#footer p {
+    margin: 5px 0;
+}

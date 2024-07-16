@@ -1,0 +1,221 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('BGweb.gif') no-repeat center center fixed;
+    background-size: cover;
+    color: #e0e0e0;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.9);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+#logo span {
+    font-size: 24px;
+    color: #e0e0e0;
+    margin-left: 10px;
+}
+
+#navigation a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+#navigation a:hover {
+    background-color: #9e4caf;
+    color: #fff;
+}
+
+#content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 80px;
+}
+
+#sidebar {
+    width: 25%;
+    background-color: rgba(44, 44, 44, 0.9);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 20px;
+    position: sticky;
+    top: 80px;
+    max-height: 470px;
+    overflow-y: auto;
+}
+
+#sidebar a {
+    display: block;
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 25px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 20px;
+}
+
+#sidebar a:hover {
+    background-color: #9e4caf;
+    color: #1c1c1c;
+}
+
+#maincontent {
+    width: 80%;
+    background-color: rgba(44, 44, 44, 0.9);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+#welcome-section {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#welcome-section h1 {
+    margin-bottom: 10px;
+    color: #9e4caf;
+}
+
+#welcome-section p {
+    margin-bottom: 20px;
+}
+
+form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #9e4caf;
+    text-align: center;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #e0e0e0;
+}
+
+form input, form select, form textarea {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    color: #e0e0e0;
+    transition: border-color 0.3s, background-color 0.3s;
+}
+
+form input:focus, form select:focus, form textarea:focus {
+    border-color: #9e4caf;
+    background: rgba(255, 255, 255, 0.2);
+    outline: none;
+}
+
+form .name, form .address-info, form .cc-info {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+form .name div {
+    width: calc(50% - 10px);
+}
+
+form .address-info div {
+    width: calc(33.33% - 13.33px);
+}
+
+form .address-info div:first-child {
+    width: calc(66.66% - 13.33px);
+}
+
+form .cc-info div {
+    width: calc(33.33% - 13.33px);
+}
+
+form .cc-info div:first-child {
+    width: calc(50% - 10px);
+}
+
+form .inputBox {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+form .inputBox label {
+    margin-bottom: 5px;
+    display: block;
+}
+
+form .btns {
+    text-align: center;
+}
+
+form .btns button {
+    background-color: #9e4caf;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+form .btns button:hover {
+    background-color: #fff;
+    color: #9e4caf;
+}
+
+#footer {
+    width: 100000px;
+    background-color: rgba(44, 44, 44, 0.9);
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#footer img {
+    height: 30px;
+    vertical-align: middle;
+}
+
+#footer p {
+    margin: 5px 0;
+}

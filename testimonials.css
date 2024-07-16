@@ -1,0 +1,222 @@
+/* Reset and basic styles */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('BGweb.gif');
+    background-size: cover;
+    color: #e0e0e0;
+  }
+  
+  #wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  #header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.9);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  #logo img {
+    height: 50px;
+    vertical-align: middle;
+  }
+  
+  #logo span {
+    font-size: 20px;
+    color: #e0e0e0;
+    margin-left: 10px;
+  }
+  
+  #navigation a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  
+  #navigation a:hover {
+    color: #9e4caf;
+  }
+  
+  #content {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 80px; 
+  }
+  
+  #sidebar {
+    width: 25%;
+    background-color: rgba(44, 44, 44, 0.9);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 20px;
+    position: sticky;
+    top: 80px;
+    max-height: 470px;
+    overflow-y: auto;
+  }
+  
+  #sidebar a {
+    display: block;
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 25px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 20px;
+  }
+  
+  #sidebar a:hover {
+    background-color: #9e4caf;
+    color: #1c1c1c;
+  }
+  
+  #maincontent {
+    width: 75%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(44, 44, 44, 0.9);
+    border-radius: 8px;
+    margin-left: auto;
+  }
+  
+  #footer {
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.9);
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+  }
+  
+  #footer img {
+    height: 30px;
+    vertical-align: middle;
+  }
+  
+  #footer p {
+    margin: 5px 0;
+  }
+  
+  /* Blog post styles */
+  
+  .blog-post {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .blog-post h2 {
+    font-size: 24px;
+    color: #e0e0e0;
+    margin: 10px 0;
+  }
+  
+  .blog-post p {
+    font-size: 16px;
+    color: #c0c0c0;
+    line-height: 1.6;
+  }
+  
+  .blog-post button {
+    background-color: #9e4caf;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .blog-post button:hover {
+    background-color: #7f3d6b;
+  }
+  
+  #blog-form {
+    background-color: #1c1c1c;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  #blog-form h2 {
+    font-size: 24px;
+    color: #ffffff;
+    margin-bottom: 15px;
+  }
+  
+  #blog-form input[type="text"],
+  #blog-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+    background-color: #f5f5f5;
+  }
+  
+  #blog-form button {
+    background-color: #9e4caf;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 16px;
+  }
+  
+  #blog-form button:hover {
+    background-color: #7f3d6b;
+  }
+  
+  .stars {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+  }
+  
+  .stars input {
+    display: none;
+  }
+  
+  .stars label {
+    font-size: 24px;
+    color: #444;
+    cursor: pointer;
+    transition: color 0.2s;
+  }
+  
+  .stars input:checked ~ label {
+    color: #fd4;
+  }
+  
+  .stars label:hover,
+  .stars label:hover ~ label,
+  .stars input:checked ~ label:hover,
+  .stars input:checked ~ label:hover ~ label {
+    color: #fd4;
+  }
+  

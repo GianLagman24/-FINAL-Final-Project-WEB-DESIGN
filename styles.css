@@ -1,0 +1,222 @@
+/* Gian Francis R. Lagman TX05 */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('BGweb.gif');
+    background-size: cover;
+    color: #e0e0e0;
+}
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.9);
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+#logo img {
+    height: 50px;
+    vertical-align: middle;
+}
+
+#logo span {
+    font-size: 20px;
+    color: #e0e0e0;
+    margin-left: 10px;
+}
+
+#navigation a {
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+#navigation a:hover {
+    color: #9e4caf;
+}
+
+#content {
+    display: flex;
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 80px; 
+}
+
+#sidebar {
+    width: 25%;
+    background-color: rgba(44, 44, 44, 0.9);
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin-right: 20px;
+    position: sticky;
+    top: 80px;
+    max-height: 470px;
+    overflow-y: auto;
+}
+
+#sidebar a {
+    display: block;
+    color: #e0e0e0;
+    text-decoration: none;
+    margin: 10px 0;
+    padding: 25px 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 4px;
+    transition: background-color 0.3s, color 0.3s;
+    font-size: 20px;
+}
+
+#sidebar a:hover {
+    background-color: #9e4caf;
+    color: #1c1c1c;
+}
+
+#maincontent {
+    width: 75%;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: rgba(44, 44, 44, 0.9);
+    border-radius: 8px;
+    margin-left: auto;
+}
+
+#welcome-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+#welcome-section h1 {
+    font-size: 36px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+}
+
+#welcome-section p {
+    font-size: 18px;
+    color: #c0c0c0;
+}
+
+#services-section {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 30px;
+    border-radius: 8px;
+}
+
+#services-section h2 {
+    font-size: 32px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.image-box {
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.service-info {
+    padding: 15px;
+}
+
+.service-info h3 {
+    font-size: 24px;
+    margin: 10px 0;
+    color: #e0e0e0;
+}
+
+.service-info p {
+    font-size: 16px;
+    color: #c0c0c0;
+}
+
+.service-btn, .avail-btn {
+    background-color: #9e4caf;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 5px;
+}
+
+.avail-btn {
+    background-color: #5773cf;
+}
+
+.service-btn:hover, .avail-btn:hover {
+    background-color: #7e3a9f;
+}
+
+#footer {
+    width: 100%;
+    background-color: rgba(44, 44, 44, 0.9);
+    color: #e0e0e0;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#footer img {
+    height: 30px;
+    vertical-align: middle;
+}
+
+#footer p {
+    margin: 5px 0;
+}
+.faq {
+    margin-bottom: 20px;
+}
+
+.faq h2 {
+    font-size: 1.5em;
+    color: #fff;
+}
+
+.faq p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #fff;
+}
+.faq .contact-link {
+    color: #5773cf; 
+    text-decoration: none; 
+}
+
+.faq .contact-link:hover,
+.faq .contact-link:focus,
+.faq .contact-link:visited {
+    color: #9e4caf; 
+    text-decoration: none; 
+}
+
